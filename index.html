@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>assign</title>
+  </head>
+  <body>
+    <div class="div1">
+    <div class="div2">
+    <h2 style="color: rgb(19, 16, 16);" >Tell us about you</h2>
+    <p>
+      please tell a bit about you so that we can personalize </br>your onboarding
+      experience.
+    </p>
+    <br>
+    <p class="pp">you are looking for,</p>
+    <button class="one" >Designs</button>
+    <button class="two" >Projects</button><br />
+
+    <label class="FL">Full name</label><br>
+    <input type="text" id="EN"  placeholder="Enter your name" ><br>
+
+    <label class="LL">Location</label><br>
+    <input type="text" id="EL" placeholder="Enter Location" ><br>
+
+    <p class="pn">Phone Number</p>
+    
+    <input id="phone" type="tel" class="N" name="phone" />
+   
+    <script>
+     const phoneInputField = document.querySelector("#phone");
+     const phoneInput = window.intlTelInput(phoneInputField, {
+       utilsScript:
+         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+     });
+   </script>
+    
+  </br>
+
+    <button class="next">Proceed to next step →</button>
+    
+    </div>
+    </div>
+    
+    
+  </body>
+</html>
